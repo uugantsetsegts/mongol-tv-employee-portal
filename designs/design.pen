@@ -4,59 +4,37 @@
     "device": ["desktop", "tablet", "phone"]
   },
   "variables": {
-    "sky-top": {
+    "m Mongol TV Blue": {
       "type": "color",
-      "value": "#4a6fa5"
+      "value": "#0066CC"
     },
-    "sky-mid": {
+    "m Mongol TV Purple": {
       "type": "color",
-      "value": "#7c5fc2"
+      "value": "#7B2D8E"
     },
-    "sky-bottom": {
+    "m Gradient Start": {
       "type": "color",
-      "value": "#c084fc"
+      "value": "#00BCD4"
     },
-    "text-primary": {
+    "m Gradient Mid": {
       "type": "color",
-      "value": "#1b1b1b"
+      "value": "#7C4DFF"
     },
-    "text-white": {
+    "m Gradient End": {
       "type": "color",
-      "value": "#ffffff"
-    },
-    "text-muted": {
-      "type": "color",
-      "value": "#64748b"
-    },
-    "glass-bg": {
-      "type": "color",
-      "value": "#ffffff20"
-    },
-    "glass-border": {
-      "type": "color",
-      "value": "#ffffff30"
+      "value": "#FF9800"
     }
   },
   "children": [
     {
       "type": "frame",
-      "name": "Homepage - Air x Mongol TV (Updated)",
+      "name": "Homepage - Vibrant Mongol TV",
       "x": 0,
       "y": 0,
       "width": 1440,
-      "height": 4200,
+      "height": 5200,
       "layout": "vertical",
-      "fill": {
-        "type": "gradient",
-        "gradientType": "linear",
-        "rotation": 180,
-        "colors": [
-          {"color": "#4a6fa5", "position": 0},
-          {"color": "#7c5fc2", "position": 0.35},
-          {"color": "#c084fc", "position": 0.70},
-          {"color": "#e8c4ff", "position": 1}
-        ]
-      },
+      "fill": "#ffffff",
       "clip": true,
       "children": [
         {
@@ -73,9 +51,9 @@
               "name": "Logo",
               "content": "МОНГОЛ ТВ",
               "fontFamily": "Inter",
-              "fontSize": 21,
-              "fontWeight": "600",
-              "fill": "#ffffff"
+              "fontSize": 24,
+              "fontWeight": "700",
+              "fill": "#18191b"
             },
             {
               "type": "frame",
@@ -91,7 +69,7 @@
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "500",
-                  "fill": "#ffffff"
+                  "fill": "#6a6a6c"
                 },
                 {
                   "type": "text",
@@ -100,7 +78,7 @@
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "500",
-                  "fill": "#ffffff"
+                  "fill": "#6a6a6c"
                 },
                 {
                   "type": "text",
@@ -109,7 +87,7 @@
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "500",
-                  "fill": "#ffffff"
+                  "fill": "#6a6a6c"
                 },
                 {
                   "type": "text",
@@ -118,17 +96,15 @@
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "500",
-                  "fill": "#ffffff"
+                  "fill": "#6a6a6c"
                 },
                 {
                   "type": "frame",
                   "name": "CTA Button",
                   "layout": "horizontal",
                   "padding": [10, 24],
-                  "fill": "#ffffff20",
+                  "fill": "#18191b",
                   "cornerRadius": 999,
-                  "stroke": "#ffffff40",
-                  "strokeWidth": 1,
                   "alignItems": "center",
                   "children": [
                     {
@@ -148,137 +124,108 @@
         },
         {
           "type": "frame",
-          "name": "Hero",
+          "name": "Hero Section",
           "layout": "vertical",
           "width": "fill_container",
-          "padding": [120, 80],
-          "gap": 24,
+          "padding": [100, 80],
+          "gap": 32,
           "alignItems": "center",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 135,
+            "colors": [
+              {"color": "#E3F2FD", "position": 0},
+              {"color": "#F3E5F5", "position": 0.5},
+              {"color": "#FFF3E0", "position": 1}
+            ]
+          },
           "children": [
-            {
-              "type": "frame",
-              "name": "Floating Orb 1",
-              "width": 288,
-              "height": 288,
-              "x": 40,
-              "y": 80,
-              "fill": "#ffffff10",
-              "cornerRadius": 999,
-              "effect": {
-                "type": "blur",
-                "radius": 40
-              }
-            },
-            {
-              "type": "frame",
-              "name": "Floating Orb 2",
-              "width": 384,
-              "height": 384,
-              "x": 900,
-              "y": 400,
-              "fill": "#ffffff10",
-              "cornerRadius": 999,
-              "effect": {
-                "type": "blur",
-                "radius": 40
-              }
-            },
             {
               "type": "frame",
               "name": "Hero Label",
               "layout": "horizontal",
-              "padding": [12, 24],
-              "fill": "#ffffff20",
-              "cornerRadius": 16,
-              "stroke": "#ffffff30",
+              "padding": [8, 16],
+              "fill": "#ffffff",
+              "cornerRadius": 999,
+              "stroke": "#c4c4c4",
               "strokeWidth": 1,
               "alignItems": "center",
               "children": [
                 {
                   "type": "text",
                   "name": "Label Text",
-                  "content": "Монгол ТВ-ийн Ажилчдын Нэгдсэн Сан",
+                  "content": "МОНГОЛ ТВ-ИЙН АЖИЛЧДЫН НЭГДСЭН САН",
                   "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "fill": "#ffffff",
-                  "opacity": 0.9
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 2,
+                  "fill": "#7B2D8E"
                 }
               ]
             },
             {
               "type": "text",
               "name": "Hero Title",
-              "content": "Хамтдаа\nИлүү Ирээдүйг",
+              "content": "Ажилтны нэгдсэн портал",
               "fontFamily": "Inter",
-              "fontSize": 72,
+              "fontSize": 56,
               "fontWeight": "700",
-              "fill": "#ffffff",
+              "fill": "#18191b",
               "textGrowth": "fixed-width",
-              "width": 900,
+              "width": 800,
               "textAlign": "center",
-              "lineHeight": 1.1
+              "lineHeight": 1.2
             },
             {
               "type": "text",
               "name": "Hero Subtitle",
-              "content": "Ажилчдынхаа сайн сайхан байдлыг дэмжих, хамт олноо бэхжүүлэх зорилготой",
+              "content": "Таны ажиллах орчин, эрх ашиг, хөгжлийн боломж - бүгд энд",
               "fontFamily": "Inter",
-              "fontSize": 20,
+              "fontSize": 18,
               "fontWeight": "400",
-              "fill": "#ffffff",
+              "fill": "#6a6a6c",
               "textGrowth": "fixed-width",
               "width": 600,
-              "textAlign": "center",
-              "opacity": 0.9
+              "textAlign": "center"
             },
             {
               "type": "frame",
-              "name": "Hero Actions",
+              "name": "Hero Search",
               "layout": "horizontal",
-              "gap": 16,
-              "padding": [20, 0],
+              "width": 640,
+              "padding": [4, 4, 4, 20],
+              "fill": "#ffffff",
+              "cornerRadius": 999,
+              "stroke": "#c4c4c4",
+              "strokeWidth": 1,
+              "alignItems": "center",
               "children": [
                 {
-                  "type": "frame",
-                  "name": "Primary Button",
-                  "layout": "horizontal",
-                  "padding": [14, 28],
-                  "fill": "#ffffff20",
-                  "cornerRadius": 16,
-                  "stroke": "#ffffff40",
-                  "strokeWidth": 1,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "Primary Text",
-                      "content": "Бидэнтэй холбогдох →",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "500",
-                      "fill": "#ffffff"
-                    }
-                  ]
+                  "type": "text",
+                  "name": "Search Placeholder",
+                  "content": "Хайх үгээ оруулна уу...",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fill": "#acadae"
                 },
                 {
                   "type": "frame",
-                  "name": "Secondary Button",
+                  "name": "Search Button",
                   "layout": "horizontal",
-                  "padding": [14, 28],
-                  "fill": "#ffffff20",
-                  "cornerRadius": 16,
-                  "stroke": "#ffffff40",
-                  "strokeWidth": 1,
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#18191b",
+                  "cornerRadius": 999,
                   "alignItems": "center",
+                  "justifyContent": "center",
                   "children": [
                     {
                       "type": "text",
-                      "name": "Secondary Text",
-                      "content": "Дэлгэрэнгүй",
+                      "name": "Arrow",
+                      "content": "↑",
                       "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "500",
+                      "fontSize": 20,
                       "fill": "#ffffff"
                     }
                   ]
@@ -289,11 +236,12 @@
         },
         {
           "type": "frame",
-          "name": "Stats",
+          "name": "Stats Section",
           "layout": "horizontal",
           "width": "fill_container",
           "padding": [60, 80],
           "gap": 24,
+          "fill": "#ffffff",
           "children": [
             {
               "type": "frame",
@@ -302,35 +250,37 @@
               "width": "fill_container",
               "padding": 40,
               "gap": 12,
-              "fill": "#ffffff20",
-              "cornerRadius": 24,
-              "stroke": "#ffffff30",
-              "strokeWidth": 1,
-              "effect": {
-                "type": "background_blur",
-                "radius": 20
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "rotation": 135,
+                "colors": [
+                  {"color": "#00BCD4", "position": 0},
+                  {"color": "#00ACC1", "position": 1}
+                ]
               },
+              "cornerRadius": 20,
               "alignItems": "center",
               "children": [
                 {
                   "type": "text",
                   "name": "Stat Number 1",
-                  "content": "2,500+",
+                  "content": "500+",
                   "fontFamily": "Inter",
-                  "fontSize": 48,
+                  "fontSize": 42,
                   "fontWeight": "700",
                   "fill": "#ffffff"
                 },
                 {
                   "type": "text",
                   "name": "Stat Label 1",
-                  "content": "Гишүүн ажилтан",
+                  "content": "АЖИЛТАН",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "600",
                   "fill": "#ffffff",
                   "letterSpacing": 2,
-                  "opacity": 0.8
+                  "opacity": 0.9
                 }
               ]
             },
@@ -341,35 +291,37 @@
               "width": "fill_container",
               "padding": 40,
               "gap": 12,
-              "fill": "#ffffff20",
-              "cornerRadius": 24,
-              "stroke": "#ffffff30",
-              "strokeWidth": 1,
-              "effect": {
-                "type": "background_blur",
-                "radius": 20
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "rotation": 135,
+                "colors": [
+                  {"color": "#E91E63", "position": 0},
+                  {"color": "#C2185B", "position": 1}
+                ]
               },
+              "cornerRadius": 20,
               "alignItems": "center",
               "children": [
                 {
                   "type": "text",
                   "name": "Stat Number 2",
-                  "content": "15+",
+                  "content": "98%",
                   "fontFamily": "Inter",
-                  "fontSize": 48,
+                  "fontSize": 42,
                   "fontWeight": "700",
                   "fill": "#ffffff"
                 },
                 {
                   "type": "text",
                   "name": "Stat Label 2",
-                  "content": "Жилийн туршлага",
+                  "content": "САНАЛ АВАЛТ",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "600",
                   "fill": "#ffffff",
                   "letterSpacing": 2,
-                  "opacity": 0.8
+                  "opacity": 0.9
                 }
               ]
             },
@@ -380,74 +332,37 @@
               "width": "fill_container",
               "padding": 40,
               "gap": 12,
-              "fill": "#ffffff20",
-              "cornerRadius": 24,
-              "stroke": "#ffffff30",
-              "strokeWidth": 1,
-              "effect": {
-                "type": "background_blur",
-                "radius": 20
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "rotation": 135,
+                "colors": [
+                  {"color": "#FF9800", "position": 0},
+                  {"color": "#F57C00", "position": 1}
+                ]
               },
+              "cornerRadius": 20,
               "alignItems": "center",
               "children": [
                 {
                   "type": "text",
                   "name": "Stat Number 3",
-                  "content": "₮500M+",
+                  "content": "24/7",
                   "fontFamily": "Inter",
-                  "fontSize": 48,
+                  "fontSize": 42,
                   "fontWeight": "700",
                   "fill": "#ffffff"
                 },
                 {
                   "type": "text",
                   "name": "Stat Label 3",
-                  "content": "Нийт хөрөнгө",
+                  "content": "HR ҮЙЛЧИЛГЭЭ",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "600",
                   "fill": "#ffffff",
                   "letterSpacing": 2,
-                  "opacity": 0.8
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "Stat Card 4",
-              "layout": "vertical",
-              "width": "fill_container",
-              "padding": 40,
-              "gap": 12,
-              "fill": "#ffffff20",
-              "cornerRadius": 24,
-              "stroke": "#ffffff30",
-              "strokeWidth": 1,
-              "effect": {
-                "type": "background_blur",
-                "radius": 20
-              },
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "name": "Stat Number 4",
-                  "content": "98%",
-                  "fontFamily": "Inter",
-                  "fontSize": 48,
-                  "fontWeight": "700",
-                  "fill": "#ffffff"
-                },
-                {
-                  "type": "text",
-                  "name": "Stat Label 4",
-                  "content": "Сэтгэл ханамж",
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "600",
-                  "fill": "#ffffff",
-                  "letterSpacing": 2,
-                  "opacity": 0.8
+                  "opacity": 0.9
                 }
               ]
             }
@@ -455,11 +370,12 @@
         },
         {
           "type": "frame",
-          "name": "Services",
+          "name": "Services Section",
           "layout": "vertical",
           "width": "fill_container",
           "padding": [80, 80],
           "gap": 40,
+          "fill": "#F9F9F9",
           "children": [
             {
               "type": "frame",
@@ -469,56 +385,33 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "frame",
-                  "name": "Label Badge",
-                  "layout": "horizontal",
-                  "padding": [8, 20],
-                  "fill": "#ffffff20",
-                  "cornerRadius": 12,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "Services Label",
-                      "content": "ҮЙЛЧИЛГЭЭ",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "600",
-                      "letterSpacing": 3,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
-                    }
-                  ]
+                  "type": "text",
+                  "name": "Services Label",
+                  "content": "ҮНДСЭН МОДУЛУУД",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 3,
+                  "fill": "#7B2D8E"
                 },
                 {
                   "type": "text",
                   "name": "Services Title",
-                  "content": "Бидний Үйлчилгээ",
+                  "content": "Үйлчилгээ",
                   "fontFamily": "Inter",
-                  "fontSize": 48,
+                  "fontSize": 40,
                   "fontWeight": "700",
-                  "fill": "#ffffff",
-                  "textAlign": "center"
-                },
-                {
-                  "type": "text",
-                  "name": "Services Subtitle",
-                  "content": "Ажилчдынхаа сайн сайхан байдлыг хангах өргөн хүрээний үйлчилгээ үзүүлж байна",
-                  "fontFamily": "Inter",
-                  "fontSize": 18,
-                  "fill": "#ffffff",
-                  "opacity": 0.8,
+                  "fill": "#18191b",
                   "textAlign": "center"
                 }
               ]
             },
             {
               "type": "frame",
-              "name": "Services Grid 1",
+              "name": "Services Grid",
               "layout": "horizontal",
               "width": "fill_container",
-              "gap": 20,
+              "gap": 24,
               "children": [
                 {
                   "type": "frame",
@@ -526,43 +419,38 @@
                   "layout": "vertical",
                   "width": "fill_container",
                   "padding": 32,
-                  "gap": 12,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
+                  "gap": 16,
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": "#c4c4c4",
                   "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
                   "children": [
                     {
                       "type": "frame",
                       "name": "Icon 1",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#E3F2FD",
+                      "cornerRadius": 12,
                       "alignItems": "center",
                       "justifyContent": "center"
                     },
                     {
                       "type": "text",
                       "name": "Card Title 1",
-                      "content": "Эрүүл мэндийн тусламж",
+                      "content": "Dashboard",
                       "fontFamily": "Inter",
                       "fontSize": 20,
                       "fontWeight": "600",
-                      "fill": "#ffffff"
+                      "fill": "#18191b"
                     },
                     {
                       "type": "text",
                       "name": "Card Desc 1",
-                      "content": "Ажилчдад эрүүл мэндийн даатгал, үзлэг шинжилгээний дэмжлэг үзүүлнэ",
+                      "content": "Өнөөдрийн мэдээлэл, KPI хураангуй",
                       "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
+                      "fontSize": 14,
+                      "fill": "#6a6a6c"
                     }
                   ]
                 },
@@ -572,89 +460,38 @@
                   "layout": "vertical",
                   "width": "fill_container",
                   "padding": 32,
-                  "gap": 12,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
+                  "gap": 16,
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": "#c4c4c4",
                   "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
                   "children": [
                     {
                       "type": "frame",
                       "name": "Icon 2",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#F3E5F5",
+                      "cornerRadius": 12,
                       "alignItems": "center",
                       "justifyContent": "center"
                     },
                     {
                       "type": "text",
                       "name": "Card Title 2",
-                      "content": "Нийгмийн хамгаалал",
+                      "content": "Хувийн мэдээлэл",
                       "fontFamily": "Inter",
                       "fontSize": 20,
                       "fontWeight": "600",
-                      "fill": "#ffffff"
+                      "fill": "#18191b"
                     },
                     {
                       "type": "text",
                       "name": "Card Desc 2",
-                      "content": "Тэтгэвэр, тэтгэмж, хүүхдийн мөнгө зэрэг нийгмийн халамжийн үйлчилгээ",
+                      "content": "Профайл, цалин, ирц",
                       "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "Service Card 3",
-                  "layout": "vertical",
-                  "width": "fill_container",
-                  "padding": 32,
-                  "gap": 12,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Icon 3",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
-                      "alignItems": "center",
-                      "justifyContent": "center"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Card Title 3",
-                      "content": "Сургалт хөгжил",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "600",
-                      "fill": "#ffffff"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Card Desc 3",
-                      "content": "Мэргэжил дээшлүүлэх, чадвар нэмэгдүүлэх сургалтууд зохион байгуулна",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
+                      "fontSize": 14,
+                      "fill": "#6a6a6c"
                     }
                   ]
                 }
@@ -665,143 +502,87 @@
               "name": "Services Grid 2",
               "layout": "horizontal",
               "width": "fill_container",
-              "gap": 20,
+              "gap": 24,
               "children": [
+                {
+                  "type": "frame",
+                  "name": "Service Card 3",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 32,
+                  "gap": 16,
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "Icon 3",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#E8F5E9",
+                      "cornerRadius": 12,
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Card Title 3",
+                      "content": "HR үйлчилгээ",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "fill": "#18191b"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Card Desc 3",
+                      "content": "Амралт, тодорхойлолт, FAQ",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#6a6a6c"
+                    }
+                  ]
+                },
                 {
                   "type": "frame",
                   "name": "Service Card 4",
                   "layout": "vertical",
                   "width": "fill_container",
                   "padding": 32,
-                  "gap": 12,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
+                  "gap": 16,
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": "#c4c4c4",
                   "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
                   "children": [
                     {
                       "type": "frame",
                       "name": "Icon 4",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#FFF3E0",
+                      "cornerRadius": 12,
                       "alignItems": "center",
                       "justifyContent": "center"
                     },
                     {
                       "type": "text",
                       "name": "Card Title 4",
-                      "content": "Урамшуулал",
+                      "content": "Ажилтны лавлах",
                       "fontFamily": "Inter",
                       "fontSize": 20,
                       "fontWeight": "600",
-                      "fill": "#ffffff"
+                      "fill": "#18191b"
                     },
                     {
                       "type": "text",
                       "name": "Card Desc 4",
-                      "content": "Шилдэг ажилтнуудыг урамшуулах, баяр ёслолын бэлэг гардуулах",
+                      "content": "Хэлтэс, холбоо барих",
                       "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "Service Card 5",
-                  "layout": "vertical",
-                  "width": "fill_container",
-                  "padding": 32,
-                  "gap": 12,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Icon 5",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
-                      "alignItems": "center",
-                      "justifyContent": "center"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Card Title 5",
-                      "content": "Зөвлөгөө мэдээлэл",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "600",
-                      "fill": "#ffffff"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Card Desc 5",
-                      "content": "Хууль эрх зүй, санхүүгийн зөвлөгөө өгөх мэргэжилтнүүдтэй хамтран ажиллана",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "Service Card 6",
-                  "layout": "vertical",
-                  "width": "fill_container",
-                  "padding": 32,
-                  "gap": 12,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Icon 6",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
-                      "alignItems": "center",
-                      "justifyContent": "center"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Card Title 6",
-                      "content": "24/7 Дэмжлэг",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "600",
-                      "fill": "#ffffff"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Card Desc 6",
-                      "content": "Ажилчдын асуудлыг шийдвэрлэх шуурхай утасны дэмжлэг үйлчилгээ",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
+                      "fontSize": 14,
+                      "fill": "#6a6a6c"
                     }
                   ]
                 }
@@ -811,94 +592,49 @@
         },
         {
           "type": "frame",
-          "name": "About",
+          "name": "About Section",
           "layout": "horizontal",
           "width": "fill_container",
           "padding": [80, 80],
           "gap": 60,
           "alignItems": "center",
+          "fill": "#ffffff",
           "children": [
             {
               "type": "frame",
               "name": "About Text",
               "layout": "vertical",
               "width": "fill_container",
-              "gap": 16,
-              "fill": "#ffffff20",
-              "cornerRadius": 24,
-              "stroke": "#ffffff30",
-              "strokeWidth": 1,
-              "padding": 48,
-              "effect": {
-                "type": "background_blur",
-                "radius": 20
-              },
+              "gap": 20,
               "children": [
                 {
-                  "type": "frame",
+                  "type": "text",
                   "name": "About Label",
-                  "layout": "horizontal",
-                  "padding": [8, 20],
-                  "fill": "#ffffff20",
-                  "cornerRadius": 12,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "Label Text",
-                      "content": "БИДНИЙ ТУХАЙ",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "600",
-                      "letterSpacing": 3,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
-                    }
-                  ]
+                  "content": "БИДНИЙ ТУХАЙ",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 3,
+                  "fill": "#7B2D8E"
                 },
                 {
                   "type": "text",
                   "name": "About Title",
-                  "content": "Монгол ТВ-ийн\nАжилчдын Сан",
+                  "content": "Монгол ТВ-ийн тухай",
                   "fontFamily": "Inter",
-                  "fontSize": 40,
+                  "fontSize": 36,
                   "fontWeight": "700",
-                  "fill": "#ffffff",
-                  "lineHeight": 1.2
+                  "fill": "#18191b"
                 },
                 {
                   "type": "text",
                   "name": "About Body",
-                  "content": "Монгол ТВ-ийн ажилчдын нэгдсэн сан нь 2009 онд байгуулагдсан бөгөөд телевизийн салбарт ажиллаж буй ажилчдын эрх ашгийг хамгаалах, тэдний ажлын нөхцөл, нийгмийн баталгааг сайжруулах зорилгоор үйл ажиллагаа явуулж байна.",
+                  "content": "Монгол ТВ нь 2009 онд үүсгэн байгуулагдсан Монголын хамгийн том телевизүүдийн нэг бөгөөд олон нийтийн суваг, контент үйлдвэрлэл, дижитал платформ гээд олон чиглэлээр үйл ажиллагаа явуулж байна.",
                   "fontFamily": "Inter",
-                  "fontSize": 17,
-                  "fill": "#ffffff",
+                  "fontSize": 16,
+                  "fill": "#6a6a6c",
                   "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "opacity": 0.9
-                },
-                {
-                  "type": "frame",
-                  "name": "CTA Button",
-                  "layout": "horizontal",
-                  "padding": [12, 24],
-                  "fill": "#ffffff20",
-                  "cornerRadius": 16,
-                  "stroke": "#ffffff40",
-                  "strokeWidth": 1,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "CTA Text",
-                      "content": "Дэлгэрэнгүй мэдээлэл →",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "500",
-                      "fill": "#ffffff"
-                    }
-                  ]
+                  "width": "fill_container"
                 }
               ]
             },
@@ -906,47 +642,150 @@
               "type": "frame",
               "name": "About Image",
               "width": 450,
-              "height": 400,
-              "fill": "#ffffff20",
-              "cornerRadius": 24,
-              "stroke": "#ffffff30",
-              "strokeWidth": 1,
-              "effect": {
-                "type": "background_blur",
-                "radius": 20
-              },
+              "height": 300,
+              "fill": "#F9F9F9",
+              "cornerRadius": 20,
+              "stroke": "#c4c4c4",
+              "strokeWidth": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Blog Section",
+          "layout": "vertical",
+          "width": "fill_container",
+          "padding": [80, 80],
+          "gap": 40,
+          "fill": "#F9F9F9",
+          "children": [
+            {
+              "type": "frame",
+              "name": "Blog Header",
+              "layout": "vertical",
+              "gap": 12,
               "alignItems": "center",
-              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Blog Label",
+                  "content": "МЭДЭЭ МЭДЭЭЛЭЛ",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 3,
+                  "fill": "#7B2D8E"
+                },
+                {
+                  "type": "text",
+                  "name": "Blog Title",
+                  "content": "Сүүлийн мэдээ",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "700",
+                  "fill": "#18191b"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Blog Grid",
+              "layout": "horizontal",
+              "width": "fill_container",
+              "gap": 24,
               "children": [
                 {
                   "type": "frame",
-                  "name": "Stat Circle",
-                  "width": 128,
-                  "height": 128,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 32,
-                  "alignItems": "center",
-                  "justifyContent": "center",
+                  "name": "Blog Card 1",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 28,
+                  "gap": 12,
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
                   "children": [
                     {
                       "type": "text",
-                      "name": "Stat Number",
-                      "content": "15+",
+                      "name": "Blog Date 1",
+                      "content": "2026.06.01",
                       "fontFamily": "Inter",
-                      "fontSize": 48,
-                      "fontWeight": "700",
-                      "fill": "#ffffff"
+                      "fontSize": 14,
+                      "fill": "#7B2D8E"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Blog Card Title 1",
+                      "content": "Шинэ ажилтны онбординг хөтөлбөр эхэллээ",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "fill": "#18191b"
                     }
                   ]
                 },
                 {
-                  "type": "text",
-                  "name": "Stat Label",
-                  "content": "Жилийн туршлага",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
+                  "type": "frame",
+                  "name": "Blog Card 2",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 28,
+                  "gap": 12,
                   "fill": "#ffffff",
-                  "opacity": 0.8
+                  "cornerRadius": 20,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Blog Date 2",
+                      "content": "2026.05.28",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#7B2D8E"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Blog Card Title 2",
+                      "content": "Хагас жилийн шилдэг ажилтнууд",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "fill": "#18191b"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Blog Card 3",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 28,
+                  "gap": 12,
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Blog Date 3",
+                      "content": "2026.05.25",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#7B2D8E"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Blog Card Title 3",
+                      "content": "Амралтын өдрүүдийн зарлал",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "fill": "#18191b"
+                    }
+                  ]
                 }
               ]
             }
@@ -954,399 +793,156 @@
         },
         {
           "type": "frame",
-          "name": "Contact",
+          "name": "Team Section",
           "layout": "vertical",
           "width": "fill_container",
           "padding": [80, 80],
           "gap": 40,
+          "fill": "#ffffff",
           "children": [
             {
               "type": "frame",
-              "name": "Contact Header",
+              "name": "Team Header",
               "layout": "vertical",
               "gap": 12,
               "alignItems": "center",
               "children": [
                 {
-                  "type": "frame",
-                  "name": "Label Badge",
-                  "layout": "horizontal",
-                  "padding": [8, 20],
-                  "fill": "#ffffff20",
-                  "cornerRadius": 12,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "Contact Label",
-                      "content": "ХОЛБОО БАРИХ",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "600",
-                      "letterSpacing": 3,
-                      "fill": "#ffffff",
-                      "opacity": 0.8
-                    }
-                  ]
+                  "type": "text",
+                  "name": "Team Label",
+                  "content": "БАГИЙН ГИШҮҮД",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 3,
+                  "fill": "#7B2D8E"
                 },
                 {
                   "type": "text",
-                  "name": "Contact Title",
-                  "content": "Бидэнтэй Холбогдох",
+                  "name": "Team Title",
+                  "content": "Удирдах баг",
                   "fontFamily": "Inter",
-                  "fontSize": 48,
+                  "fontSize": 40,
                   "fontWeight": "700",
-                  "fill": "#ffffff",
-                  "textAlign": "center"
+                  "fill": "#18191b"
                 }
               ]
             },
             {
               "type": "frame",
-              "name": "Contact Info Grid",
+              "name": "Team Grid",
               "layout": "horizontal",
               "width": "fill_container",
-              "gap": 20,
+              "gap": 24,
               "children": [
                 {
                   "type": "frame",
-                  "name": "Info Card 1",
-                  "layout": "vertical",
-                  "width": "fill_container",
-                  "padding": 32,
-                  "gap": 8,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Icon 1",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
-                      "alignItems": "center",
-                      "justifyContent": "center"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Info Label 1",
-                      "content": "Утас",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fill": "#ffffff",
-                      "opacity": 0.6
-                    },
-                    {
-                      "type": "text",
-                      "name": "Info Value 1",
-                      "content": "+976 11 123 456",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "600",
-                      "fill": "#ffffff"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "Info Card 2",
-                  "layout": "vertical",
-                  "width": "fill_container",
-                  "padding": 32,
-                  "gap": 8,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Icon 2",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
-                      "alignItems": "center",
-                      "justifyContent": "center"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Info Label 2",
-                      "content": "И-мэйл",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fill": "#ffffff",
-                      "opacity": 0.6
-                    },
-                    {
-                      "type": "text",
-                      "name": "Info Value 2",
-                      "content": "info@mongoltv.mn",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "600",
-                      "fill": "#ffffff"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "Info Card 3",
-                  "layout": "vertical",
-                  "width": "fill_container",
-                  "padding": 32,
-                  "gap": 8,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Icon 3",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
-                      "alignItems": "center",
-                      "justifyContent": "center"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Info Label 3",
-                      "content": "Хаяг",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fill": "#ffffff",
-                      "opacity": 0.6
-                    },
-                    {
-                      "type": "text",
-                      "name": "Info Value 3",
-                      "content": "Улаанбаатар хот, Сүхбаатар дүүрэг",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "600",
-                      "fill": "#ffffff"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "Info Card 4",
-                  "layout": "vertical",
-                  "width": "fill_container",
-                  "padding": 32,
-                  "gap": 8,
-                  "fill": "#ffffff20",
-                  "cornerRadius": 24,
-                  "stroke": "#ffffff30",
-                  "strokeWidth": 1,
-                  "effect": {
-                    "type": "background_blur",
-                    "radius": 20
-                  },
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Icon 4",
-                      "width": 56,
-                      "height": 56,
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
-                      "alignItems": "center",
-                      "justifyContent": "center"
-                    },
-                    {
-                      "type": "text",
-                      "name": "Info Label 4",
-                      "content": "Ажлын цаг",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fill": "#ffffff",
-                      "opacity": 0.6
-                    },
-                    {
-                      "type": "text",
-                      "name": "Info Value 4",
-                      "content": "Даваа - Баасан: 09:00 - 18:00",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "600",
-                      "fill": "#ffffff"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "Contact Form",
-              "layout": "horizontal",
-              "width": "fill_container",
-              "padding": 48,
-              "gap": 40,
-              "fill": "#ffffff20",
-              "cornerRadius": 24,
-              "stroke": "#ffffff30",
-              "strokeWidth": 1,
-              "effect": {
-                "type": "background_blur",
-                "radius": 20
-              },
-              "children": [
-                {
-                  "type": "frame",
-                  "name": "Form Fields",
-                  "layout": "vertical",
-                  "width": "fill_container",
-                  "gap": 16,
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "Form Title",
-                      "content": "Мессеж илгээх",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "700",
-                      "fill": "#ffffff"
-                    },
-                    {
-                      "type": "frame",
-                      "name": "Input 1",
-                      "layout": "horizontal",
-                      "padding": [12, 16],
-                      "fill": "#ffffff10",
-                      "cornerRadius": 16,
-                      "stroke": "#ffffff20",
-                      "strokeWidth": 1,
-                      "children": [
-                        {
-                          "type": "text",
-                          "name": "Placeholder 1",
-                          "content": "Нэр",
-                          "fontFamily": "Inter",
-                          "fontSize": 16,
-                          "fill": "#ffffff50"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "name": "Input 2",
-                      "layout": "horizontal",
-                      "padding": [12, 16],
-                      "fill": "#ffffff10",
-                      "cornerRadius": 16,
-                      "stroke": "#ffffff20",
-                      "strokeWidth": 1,
-                      "children": [
-                        {
-                          "type": "text",
-                          "name": "Placeholder 2",
-                          "content": "И-мэйл",
-                          "fontFamily": "Inter",
-                          "fontSize": 16,
-                          "fill": "#ffffff50"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "name": "Textarea",
-                      "layout": "horizontal",
-                      "height": 120,
-                      "padding": [12, 16],
-                      "fill": "#ffffff10",
-                      "cornerRadius": 16,
-                      "stroke": "#ffffff20",
-                      "strokeWidth": 1,
-                      "children": [
-                        {
-                          "type": "text",
-                          "name": "Placeholder 3",
-                          "content": "Мессеж",
-                          "fontFamily": "Inter",
-                          "fontSize": 16,
-                          "fill": "#ffffff50"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "name": "Submit Button",
-                      "layout": "horizontal",
-                      "padding": [12, 24],
-                      "fill": "#ffffff20",
-                      "cornerRadius": 16,
-                      "stroke": "#ffffff40",
-                      "strokeWidth": 1,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "name": "Submit Text",
-                          "content": "Илгээх",
-                          "fontFamily": "Inter",
-                          "fontSize": 16,
-                          "fontWeight": "500",
-                          "fill": "#ffffff"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "Form Side",
+                  "name": "Team Card 1",
                   "layout": "vertical",
                   "width": "fill_container",
                   "padding": 32,
                   "gap": 16,
-                  "fill": "#ffffff15",
-                  "cornerRadius": 16,
+                  "fill": "#F9F9F9",
+                  "cornerRadius": 20,
                   "alignItems": "center",
-                  "justifyContent": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "name": "Side Title",
-                      "content": "Ажилчдын нэгдсэн сан",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "600",
-                      "fill": "#ffffff",
-                      "textAlign": "center"
+                      "type": "ellipse",
+                      "name": "Avatar 1",
+                      "width": 80,
+                      "height": 80,
+                      "fill": "#E3F2FD"
                     },
                     {
                       "type": "text",
-                      "name": "Side Subtitle",
-                      "content": "Монгол ТВ",
+                      "name": "Member Name 1",
+                      "content": "Б. Бат-Эрдэнэ",
                       "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fill": "#ffffff",
-                      "opacity": 0.6,
-                      "textAlign": "center"
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "fill": "#18191b"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Member Role 1",
+                      "content": "Ерөнхий захирал",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#6a6a6c"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Team Card 2",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 32,
+                  "gap": 16,
+                  "fill": "#F9F9F9",
+                  "cornerRadius": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "name": "Avatar 2",
+                      "width": 80,
+                      "height": 80,
+                      "fill": "#F3E5F5"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Member Name 2",
+                      "content": "Д. Сарантуяа",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "fill": "#18191b"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Member Role 2",
+                      "content": "HR менежер",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#6a6a6c"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Team Card 3",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 32,
+                  "gap": 16,
+                  "fill": "#F9F9F9",
+                  "cornerRadius": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "name": "Avatar 3",
+                      "width": 80,
+                      "height": 80,
+                      "fill": "#E8F5E9"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Member Name 3",
+                      "content": "Г. Болд",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "fill": "#18191b"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Member Role 3",
+                      "content": "IT захирал",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#6a6a6c"
                     }
                   ]
                 }
@@ -1361,8 +957,7 @@
           "width": "fill_container",
           "padding": [40, 80],
           "gap": 24,
-          "stroke": "#ffffff10",
-          "strokeWidth": 1,
+          "fill": "#18191b",
           "alignItems": "center",
           "children": [
             {
@@ -1394,7 +989,7 @@
                       "content": "Ажилчдын нэгдсэн сан",
                       "fontFamily": "Inter",
                       "fontSize": 14,
-                      "fill": "#ffffff60"
+                      "fill": "#94a3b8"
                     }
                   ]
                 },
@@ -1420,7 +1015,7 @@
                       "content": "Нүүр",
                       "fontFamily": "Inter",
                       "fontSize": 14,
-                      "fill": "#ffffff60"
+                      "fill": "#94a3b8"
                     },
                     {
                       "type": "text",
@@ -1428,7 +1023,7 @@
                       "content": "Бидний тухай",
                       "fontFamily": "Inter",
                       "fontSize": 14,
-                      "fill": "#ffffff60"
+                      "fill": "#94a3b8"
                     },
                     {
                       "type": "text",
@@ -1436,7 +1031,7 @@
                       "content": "Үйлчилгээ",
                       "fontFamily": "Inter",
                       "fontSize": 14,
-                      "fill": "#ffffff60"
+                      "fill": "#94a3b8"
                     },
                     {
                       "type": "text",
@@ -1444,7 +1039,7 @@
                       "content": "Блог",
                       "fontFamily": "Inter",
                       "fontSize": 14,
-                      "fill": "#ffffff60"
+                      "fill": "#94a3b8"
                     }
                   ]
                 },
@@ -1470,7 +1065,7 @@
                       "content": "+976 11 123 456",
                       "fontFamily": "Inter",
                       "fontSize": 14,
-                      "fill": "#ffffff60"
+                      "fill": "#94a3b8"
                     },
                     {
                       "type": "text",
@@ -1478,7 +1073,7 @@
                       "content": "info@mongoltv.mn",
                       "fontFamily": "Inter",
                       "fontSize": 14,
-                      "fill": "#ffffff60"
+                      "fill": "#94a3b8"
                     }
                   ]
                 }
@@ -1490,18 +1085,16 @@
               "layout": "horizontal",
               "width": "fill_container",
               "padding": [24, 0, 0, 0],
-              "stroke": "#ffffff10",
-              "strokeWidth": 1,
               "alignItems": "center",
               "justifyContent": "center",
               "children": [
                 {
                   "type": "text",
                   "name": "Footer Copy",
-                  "content": "2024 Монгол ТВ. Бүх эрх хуулиар хамгаалагдсан.",
+                  "content": "© 2026 Монгол ТВ. Бүх эрх хуулиар хамгаалагдсан.",
                   "fontFamily": "Inter",
                   "fontSize": 14,
-                  "fill": "#ffffff40"
+                  "fill": "#64748b"
                 }
               ]
             }
