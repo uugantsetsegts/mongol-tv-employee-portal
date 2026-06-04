@@ -1,0 +1,488 @@
+{
+  "version": "2.13",
+  "themes": {
+    "device": ["desktop", "tablet", "phone"]
+  },
+  "children": [
+    {
+      "type": "frame",
+      "name": "Team Section - Монгол ТВ",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "layout": "vertical",
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "rotation": 180,
+        "colors": [
+          {"color": "#E8F5E9", "position": 0},
+          {"color": "#ffffff", "position": 1}
+        ]
+      },
+      "clip": true,
+      "children": [
+        {
+          "type": "frame",
+          "name": "Navigation",
+          "layout": "horizontal",
+          "width": "fill_container",
+          "padding": [20, 80],
+          "alignItems": "center",
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "text",
+              "name": "Logo",
+              "content": "МОНГОЛ ТВ",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "fill": "#18191b"
+            },
+            {
+              "type": "frame",
+              "name": "Nav-Links",
+              "layout": "horizontal",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Nav-Home",
+                  "content": "Нүүр",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-About",
+                  "content": "Бидний тухай",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-Services",
+                  "content": "Үйлчилгээ",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-Team",
+                  "content": "Баг",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "#4CAF50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Team-Header",
+          "layout": "vertical",
+          "width": "fill_container",
+          "padding": [40, 80],
+          "gap": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "name": "Label-Badge",
+              "layout": "horizontal",
+              "padding": [8, 16],
+              "fill": "#ffffff",
+              "cornerRadius": 999,
+              "stroke": "#4CAF50",
+              "strokeWidth": 1,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Team-Label",
+                  "content": "БАГИЙН ГИШҮҮД",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 2,
+                  "fill": "#4CAF50"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Team-Title",
+              "content": "Удирдах баг",
+              "fontFamily": "Inter",
+              "fontSize": 42,
+              "fontWeight": "700",
+              "fill": "#18191b"
+            },
+            {
+              "type": "text",
+              "name": "Team-Subtitle",
+              "content": "Монгол ТВ-ийн удирдах багийн гишүүд",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fill": "#6a6a6c"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Team-Grid",
+          "layout": "horizontal",
+          "width": "fill_container",
+          "padding": [0, 80],
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "name": "Team-Card-1",
+              "layout": "vertical",
+              "width": "fill_container",
+              "padding": 40,
+              "gap": 20,
+              "fill": "#ffffff",
+              "cornerRadius": 20,
+              "stroke": "#c4c4c4",
+              "strokeWidth": 1,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "Avatar-1",
+                  "width": 120,
+                  "height": 120,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "rotation": 135,
+                    "colors": [
+                      {"color": "#667eea", "position": 0},
+                      {"color": "#764ba2", "position": 1}
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Avatar-Text-1",
+                      "content": "Б",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "700",
+                      "fill": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "Member-Name-1",
+                  "content": "Б. Бат-Эрдэнэ",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "600",
+                  "fill": "#18191b"
+                },
+                {
+                  "type": "text",
+                  "name": "Member-Role-1",
+                  "content": "Ерөнхий захирал",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "frame",
+                  "name": "Social-1",
+                  "layout": "horizontal",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "Social-Icon-1",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#E3F2FD",
+                      "cornerRadius": 999,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Social-Text-1",
+                          "content": "in",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "#0066CC"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Social-Icon-2",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#E3F2FD",
+                      "cornerRadius": 999,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Social-Text-2",
+                          "content": "@",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "#0066CC"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Team-Card-2",
+              "layout": "vertical",
+              "width": "fill_container",
+              "padding": 40,
+              "gap": 20,
+              "fill": "#ffffff",
+              "cornerRadius": 20,
+              "stroke": "#c4c4c4",
+              "strokeWidth": 1,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "Avatar-2",
+                  "width": 120,
+                  "height": 120,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "rotation": 135,
+                    "colors": [
+                      {"color": "#f093fb", "position": 0},
+                      {"color": "#f5576c", "position": 1}
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Avatar-Text-2",
+                      "content": "С",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "700",
+                      "fill": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "Member-Name-2",
+                  "content": "Д. Сарантуяа",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "600",
+                  "fill": "#18191b"
+                },
+                {
+                  "type": "text",
+                  "name": "Member-Role-2",
+                  "content": "HR менежер",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "frame",
+                  "name": "Social-2",
+                  "layout": "horizontal",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "Social-Icon-3",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#F3E5F5",
+                      "cornerRadius": 999,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Social-Text-3",
+                          "content": "in",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "#7B2D8E"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Social-Icon-4",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#F3E5F5",
+                      "cornerRadius": 999,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Social-Text-4",
+                          "content": "@",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "#7B2D8E"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Team-Card-3",
+              "layout": "vertical",
+              "width": "fill_container",
+              "padding": 40,
+              "gap": 20,
+              "fill": "#ffffff",
+              "cornerRadius": 20,
+              "stroke": "#c4c4c4",
+              "strokeWidth": 1,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "Avatar-3",
+                  "width": 120,
+                  "height": 120,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "rotation": 135,
+                    "colors": [
+                      {"color": "#4facfe", "position": 0},
+                      {"color": "#00f2fe", "position": 1}
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Avatar-Text-3",
+                      "content": "Б",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "700",
+                      "fill": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "Member-Name-3",
+                  "content": "Г. Болд",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "600",
+                  "fill": "#18191b"
+                },
+                {
+                  "type": "text",
+                  "name": "Member-Role-3",
+                  "content": "IT захирал",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "frame",
+                  "name": "Social-3",
+                  "layout": "horizontal",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "Social-Icon-5",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#E8F5E9",
+                      "cornerRadius": 999,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Social-Text-5",
+                          "content": "in",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "#4CAF50"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Social-Icon-6",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#E8F5E9",
+                      "cornerRadius": 999,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Social-Text-6",
+                          "content": "@",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "#4CAF50"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

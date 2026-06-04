@@ -1,0 +1,467 @@
+{
+  "version": "2.13",
+  "themes": {
+    "device": ["desktop", "tablet", "phone"]
+  },
+  "children": [
+    {
+      "type": "frame",
+      "name": "Contact Section - Монгол ТВ",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "layout": "vertical",
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "rotation": 180,
+        "colors": [
+          {"color": "#FFF3E0", "position": 0},
+          {"color": "#FFE0B2", "position": 1}
+        ]
+      },
+      "clip": true,
+      "children": [
+        {
+          "type": "frame",
+          "name": "Navigation",
+          "layout": "horizontal",
+          "width": "fill_container",
+          "padding": [20, 80],
+          "alignItems": "center",
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "text",
+              "name": "Logo",
+              "content": "МОНГОЛ ТВ",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "fill": "#18191b"
+            },
+            {
+              "type": "frame",
+              "name": "Nav-Links",
+              "layout": "horizontal",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Nav-Home",
+                  "content": "Нүүр",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-About",
+                  "content": "Бидний тухай",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-Services",
+                  "content": "Үйлчилгээ",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#6a6a6c"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-Contact",
+                  "content": "Холбоо барих",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "#F57C00"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Contact-Header",
+          "layout": "vertical",
+          "width": "fill_container",
+          "padding": [40, 80],
+          "gap": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "name": "Label-Badge",
+              "layout": "horizontal",
+              "padding": [8, 16],
+              "fill": "#ffffff",
+              "cornerRadius": 999,
+              "stroke": "#F57C00",
+              "strokeWidth": 1,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Contact-Label",
+                  "content": "ХОЛБОО БАРИХ",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 2,
+                  "fill": "#F57C00"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Contact-Title",
+              "content": "Бидэнтэй холбогдох",
+              "fontFamily": "Inter",
+              "fontSize": 42,
+              "fontWeight": "700",
+              "fill": "#18191b"
+            },
+            {
+              "type": "text",
+              "name": "Contact-Subtitle",
+              "content": "Асуулт байна уу? Бидэнтэй холбогдоно уу",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fill": "#6a6a6c"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Contact-Content",
+          "layout": "horizontal",
+          "width": "fill_container",
+          "padding": [0, 80],
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "name": "Contact-Info",
+              "layout": "vertical",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "Info-Card-1",
+                  "layout": "horizontal",
+                  "padding": 24,
+                  "gap": 16,
+                  "fill": "#ffffff",
+                  "cornerRadius": 16,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "Info-Icon-1",
+                      "width": 56,
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "rotation": 135,
+                        "colors": [
+                          {"color": "#FF9800", "position": 0},
+                          {"color": "#F57C00", "position": 1}
+                        ]
+                      },
+                      "cornerRadius": 16,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Info-Sticker-1",
+                          "content": "📞",
+                          "fontFamily": "Inter",
+                          "fontSize": 28
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Info-Text-1",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Info-Label-1",
+                          "content": "Утас",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fill": "#6a6a6c"
+                        },
+                        {
+                          "type": "text",
+                          "name": "Info-Value-1",
+                          "content": "+976 11 123 456",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "#18191b"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Info-Card-2",
+                  "layout": "horizontal",
+                  "padding": 24,
+                  "gap": 16,
+                  "fill": "#ffffff",
+                  "cornerRadius": 16,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "Info-Icon-2",
+                      "width": 56,
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "rotation": 135,
+                        "colors": [
+                          {"color": "#00BCD4", "position": 0},
+                          {"color": "#0066CC", "position": 1}
+                        ]
+                      },
+                      "cornerRadius": 16,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Info-Sticker-2",
+                          "content": "✉️",
+                          "fontFamily": "Inter",
+                          "fontSize": 28
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Info-Text-2",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Info-Label-2",
+                          "content": "И-мэйл",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fill": "#6a6a6c"
+                        },
+                        {
+                          "type": "text",
+                          "name": "Info-Value-2",
+                          "content": "info@mongoltv.mn",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "#18191b"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Info-Card-3",
+                  "layout": "horizontal",
+                  "padding": 24,
+                  "gap": 16,
+                  "fill": "#ffffff",
+                  "cornerRadius": 16,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "Info-Icon-3",
+                      "width": 56,
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "rotation": 135,
+                        "colors": [
+                          {"color": "#E91E63", "position": 0},
+                          {"color": "#7B2D8E", "position": 1}
+                        ]
+                      },
+                      "cornerRadius": 16,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Info-Sticker-3",
+                          "content": "📍",
+                          "fontFamily": "Inter",
+                          "fontSize": 28
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Info-Text-3",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Info-Label-3",
+                          "content": "Хаяг",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fill": "#6a6a6c"
+                        },
+                        {
+                          "type": "text",
+                          "name": "Info-Value-3",
+                          "content": "Улаанбаатар, Сүхбаатар дүүрэг",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "#18191b"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Contact-Form",
+              "layout": "vertical",
+              "width": "fill_container",
+              "padding": 40,
+              "gap": 20,
+              "fill": "#ffffff",
+              "cornerRadius": 20,
+              "stroke": "#c4c4c4",
+              "strokeWidth": 1,
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Form-Title",
+                  "content": "Мессеж илгээх",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600",
+                  "fill": "#18191b"
+                },
+                {
+                  "type": "frame",
+                  "name": "Form-Input-Name",
+                  "layout": "horizontal",
+                  "padding": [16, 16],
+                  "fill": "#F9F9F9",
+                  "cornerRadius": 12,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Input-Placeholder-Name",
+                      "content": "Нэр",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#acadae"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Form-Input-Email",
+                  "layout": "horizontal",
+                  "padding": [16, 16],
+                  "fill": "#F9F9F9",
+                  "cornerRadius": 12,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Input-Placeholder-Email",
+                      "content": "И-мэйл",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#acadae"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Form-Textarea",
+                  "layout": "horizontal",
+                  "height": 120,
+                  "padding": [16, 16],
+                  "fill": "#F9F9F9",
+                  "cornerRadius": 12,
+                  "stroke": "#c4c4c4",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Textarea-Placeholder",
+                      "content": "Мессеж",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fill": "#acadae"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Submit-Button",
+                  "layout": "horizontal",
+                  "padding": [16, 24],
+                  "fill": "#18191b",
+                  "cornerRadius": 999,
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Submit-Text",
+                      "content": "Илгээх",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "500",
+                      "fill": "#ffffff"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

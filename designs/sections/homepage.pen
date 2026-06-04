@@ -1,0 +1,383 @@
+{
+  "version": "2.13",
+  "themes": {
+    "device": ["desktop", "tablet", "phone"]
+  },
+  "children": [
+    {
+      "type": "frame",
+      "name": "Homepage - Hero Section",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "layout": "vertical",
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "rotation": 135,
+        "colors": [
+          {"color": "#667eea", "position": 0},
+          {"color": "#764ba2", "position": 0.3},
+          {"color": "#f093fb", "position": 0.6},
+          {"color": "#f5576c", "position": 1}
+        ]
+      },
+      "clip": true,
+      "children": [
+        {
+          "type": "frame",
+          "name": "Navigation",
+          "layout": "horizontal",
+          "width": "fill_container",
+          "padding": [20, 80],
+          "alignItems": "center",
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "text",
+              "name": "Logo",
+              "content": "МОНГОЛ ТВ",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "fill": "#ffffff"
+            },
+            {
+              "type": "frame",
+              "name": "Nav-Links",
+              "layout": "horizontal",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Nav-Home",
+                  "content": "Нүүр",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#ffffff"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-About",
+                  "content": "Бидний тухай",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#ffffff"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-Services",
+                  "content": "Үйлчилгээ",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#ffffff"
+                },
+                {
+                  "type": "text",
+                  "name": "Nav-Blog",
+                  "content": "Блог",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "#ffffff"
+                },
+                {
+                  "type": "frame",
+                  "name": "Login-Button",
+                  "layout": "horizontal",
+                  "padding": [10, 24],
+                  "fill": "#ffffff",
+                  "cornerRadius": 999,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Login-Text",
+                      "content": "Нэвтрэх",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "#18191b"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Hero-Content",
+          "layout": "vertical",
+          "width": "fill_container",
+          "padding": [80, 80],
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "name": "Floating-Sticker-1",
+              "x": 100,
+              "y": 150,
+              "width": 80,
+              "height": 80,
+              "fill": "#ffffff20",
+              "cornerRadius": 20,
+              "rotation": 15,
+              "alignItems": "center",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Sticker-1",
+                  "content": "✨",
+                  "fontFamily": "Inter",
+                  "fontSize": 36
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Floating-Sticker-2",
+              "x": 1200,
+              "y": 200,
+              "width": 100,
+              "height": 100,
+              "fill": "#ffffff15",
+              "cornerRadius": 999,
+              "rotation": -20,
+              "alignItems": "center",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Sticker-2",
+                  "content": "🎯",
+                  "fontFamily": "Inter",
+                  "fontSize": 48
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Floating-Sticker-3",
+              "x": 200,
+              "y": 400,
+              "width": 60,
+              "height": 60,
+              "fill": "#ffffff25",
+              "cornerRadius": 12,
+              "rotation": 45,
+              "alignItems": "center",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Sticker-3",
+                  "content": "💡",
+                  "fontFamily": "Inter",
+                  "fontSize": 28
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Badge",
+              "layout": "horizontal",
+              "padding": [8, 16],
+              "fill": "#ffffff",
+              "cornerRadius": 999,
+              "stroke": "#c4c4c4",
+              "strokeWidth": 1,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Badge-Text",
+                  "content": "МОНГОЛ ТВ-ИЙН АЖИЛЧДЫН НЭГДСЭН САН",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 2,
+                  "fill": "#7B2D8E"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Hero-Title",
+              "content": "Ажилтны нэгдсэн портал",
+              "fontFamily": "Inter",
+              "fontSize": 56,
+              "fontWeight": "700",
+              "fill": "#ffffff",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "textAlign": "center",
+              "lineHeight": 1.2
+            },
+            {
+              "type": "text",
+              "name": "Hero-Subtitle",
+              "content": "Таны ажиллах орчин, эрх ашиг, хөгжлийн боломж - бүгд энд",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "400",
+              "fill": "#ffffff",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "textAlign": "center"
+            },
+            {
+              "type": "frame",
+              "name": "Search-Box",
+              "layout": "horizontal",
+              "width": 640,
+              "padding": [4, 4, 4, 20],
+              "fill": "#ffffff",
+              "cornerRadius": 999,
+              "stroke": "#c4c4c4",
+              "strokeWidth": 1,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Search-Placeholder",
+                  "content": "Хайх үгээ оруулна уу...",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fill": "#acadae"
+                },
+                {
+                  "type": "frame",
+                  "name": "Search-Button",
+                  "layout": "horizontal",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#18191b",
+                  "cornerRadius": 999,
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Arrow-Icon",
+                      "content": "↑",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fill": "#ffffff"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Stats-Row",
+              "layout": "horizontal",
+              "gap": 24,
+              "padding": [40, 0],
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "Stat-Card-1",
+                  "layout": "vertical",
+                  "padding": 24,
+                  "gap": 8,
+                  "fill": "#ffffff30",
+                  "cornerRadius": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Stat-Num-1",
+                      "content": "500+",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "700",
+                      "fill": "#ffffff"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Stat-Text-1",
+                      "content": "Ажилтан",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fill": "#ffffff",
+                      "opacity": 0.8
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Stat-Card-2",
+                  "layout": "vertical",
+                  "padding": 24,
+                  "gap": 8,
+                  "fill": "#ffffff30",
+                  "cornerRadius": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Stat-Num-2",
+                      "content": "98%",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "700",
+                      "fill": "#ffffff"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Stat-Text-2",
+                      "content": "Санал авалт",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fill": "#ffffff",
+                      "opacity": 0.8
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Stat-Card-3",
+                  "layout": "vertical",
+                  "padding": 24,
+                  "gap": 8,
+                  "fill": "#ffffff30",
+                  "cornerRadius": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "Stat-Num-3",
+                      "content": "24/7",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "700",
+                      "fill": "#ffffff"
+                    },
+                    {
+                      "type": "text",
+                      "name": "Stat-Text-3",
+                      "content": "HR үйлчилгээ",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fill": "#ffffff",
+                      "opacity": 0.8
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
