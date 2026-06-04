@@ -1,0 +1,37 @@
+{
+  "motion_level": 2,
+  "visual_direction": "editorial-dark",
+  "packages": [
+    "framer-motion",
+    "lucide-react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "shadcn_components": [
+    "button",
+    "card",
+    "input",
+    "dialog",
+    "accordion",
+    "badge",
+    "separator"
+  ],
+  "custom_components": [
+    "Navigation",
+    "HeroSection",
+    "ServiceCard",
+    "BlogCard",
+    "TeamCard",
+    "FAQItem",
+    "Footer"
+  ],
+  "animation_config": {
+    "core_library": "framer-motion",
+    "scroll_library": "none",
+    "text_animation": "none",
+    "page_transition": "framer",
+    "ambient_system": "css",
+    "micro_interactions": "framer-motion",
+    "gsap_plugins": []
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "siteName": "mongol-tv-ajilchdyn-negdsen-san",
+    "visualDirection": "modern-minimal",
+    "motionLevel": 2,
+    "defaultLocale": "mn",
+    "locales": ["mn", "en"]
+  },
+  "colors": {
+    "brand": {
+      "primary": "#6366f1",
+      "primaryDark": "#4f46e5",
+      "primaryLight": "#818cf8"
+    },
+    "neutral": {
+      "black": "#0a0e27",
+      "dark": "#111827",
+      "medium": "#1e293b",
+      "light": "#64748b",
+      "white": "#ffffff"
+    },
+    "semantic": {
+      "background": "#0a0e27",
+      "foreground": "#ffffff",
+      "card": "#111827",
+      "cardForeground": "#ffffff",
+      "popover": "#111827",
+      "popoverForeground": "#ffffff",
+      "primary": "#6366f1",
+      "primaryForeground": "#ffffff",
+      "secondary": "#1e293b",
+      "secondaryForeground": "#ffffff",
+      "muted": "#1e293b",
+      "mutedForeground": "#64748b",
+      "accent": "#6366f1",
+      "accentForeground": "#ffffff",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#6366f1",
+      "success": "#22c55e",
+      "warning": "#f59e0b",
+      "destructive": "#ef4444"
+    }
+  },
+  "typography": {
+    "families": {
+      "display": "Poppins",
+      "body": "Poppins",
+      "mono": "JetBrains Mono"
+    },
+    "scale": {
+      "xs": "12px",
+      "sm": "14px",
+      "base": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "32px",
+      "4xl": "40px",
+      "5xl": "48px",
+      "6xl": "56px"
+    }
+  },
+  "spacing": {
+    "scale": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px",
+      "3xl": "64px",
+      "4xl": "80px"
+    },
+    "layout": {
+      "container": "1280px",
+      "content": "960px",
+      "narrow": "720px"
+    }
+  },
+  "radius": {
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "24px",
+    "full": "9999px"
+  },
+  "shadows": {
+    "sm": "0 2px 8px rgba(0,0,0,0.2)",
+    "md": "0 4px 20px rgba(0,0,0,0.25)",
+    "lg": "0 8px 30px rgba(0,0,0,0.3)",
+    "xl": "0 12px 40px rgba(0,0,0,0.35)"
+  },
+  "motion": {
+    "duration": {
+      "fast": "150ms",
+      "normal": "200ms",
+      "slow": "300ms"
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)"
+    },
+    "variants": {
+      "fadeIn": {
+        "initial": { "opacity": 0 },
+        "animate": { "opacity": 1 }
+      },
+      "slideUp": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 }
+      },
+      "scaleIn": {
+        "initial": { "opacity": 0, "scale": 0.95 },
+        "animate": { "opacity": 1, "scale": 1 }
+      }
+    }
+  }
+}
