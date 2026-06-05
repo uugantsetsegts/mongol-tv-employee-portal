@@ -15,11 +15,11 @@ export default function Header() {
   ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-deep-space/80 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-canvas/80 backdrop-blur-xl border-b border-border-subtle">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="text-starlight font-bold text-xl">
+          <a href="#" className="text-white font-bold text-xl tracking-tight">
             МОНГОЛ ТВ
           </a>
 
@@ -29,14 +29,14 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-silver hover:text-starlight transition-colors text-sm"
+                className="text-text-secondary hover:text-white transition-colors text-sm"
               >
                 {item.name}
               </a>
             ))}
             <a
               href="#"
-              className="bg-mercury-blue text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-mercury-blue/90 transition-colors"
+              className="bg-electric-blue text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-electric-blue/90 transition-colors"
             >
               Нэвтрэх
             </a>
@@ -44,7 +44,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-starlight"
+            className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,14 +65,14 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-deep-space border-t border-graphite"
+            className="md:hidden bg-card-dark border-t border-border-subtle"
           >
             <div className="px-6 py-4 space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block text-silver hover:text-starlight transition-colors"
+                  className="block text-text-secondary hover:text-white transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

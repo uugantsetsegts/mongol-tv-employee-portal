@@ -9,18 +9,33 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'sky-top': '#4a6fa5',
-        'sky-mid': '#7c5fc2',
-        'sky-bottom': '#c084fc',
-        'sculpture-ink': '#1b1b1b',
-        'signal-blue': '#2b7fff',
-        'dusk-blue': '#426188',
+        'canvas': '#000000',
+        'card-dark': '#0f0f10',
+        'card-navy': '#001b33',
+        'card-deep': '#030719',
+        'electric-blue': '#0088ff',
+        'text-primary': '#ffffff',
+        'text-secondary': 'rgba(255, 255, 255, 0.8)',
+        'text-muted': 'rgba(255, 255, 255, 0.6)',
+        'border-subtle': 'rgba(255, 255, 255, 0.08)',
+        'aurora-violet': '#2d1b4e',
+        'aurora-lavender': '#9b8ab8',
+        'aurora-pink': '#c4a8d0',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
       },
+      borderRadius: {
+        'card': '24px',
+        'card-lg': '32px',
+      },
       backgroundImage: {
-        'sky-gradient': 'linear-gradient(180deg, #4a6fa5 0%, #7c5fc2 35%, #c084fc 70%, #e8c4ff 100%)',
+        'hero-aurora': 'linear-gradient(180deg, #000000 0%, #0d0d1f 20%, #1a0f3d 40%, #2d1f5c 55%, #4a3575 70%, #6b4f8a 80%, #9b7ab0 90%, #c4a8d0 100%)',
+        'card-gradient': 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)',
+      },
+      letterSpacing: {
+        'tighter': '-0.04em',
+        'tight': '-0.02em',
       },
     },
   },

@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 export default function Hero() {
@@ -9,53 +10,113 @@ export default function Hero() {
     setIsVisible(true)
   }, [])
 
+  const floatingVariants = {
+    animate: {
+      y: [-10, 10, -10],
+      transition: {
+        duration: 4,
+        repeat: Infinity,
+        ease: 'easeInOut'
+      }
+    }
+  }
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
       {/* Floating gradient orbs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl" />
+      <motion.div 
+        className="absolute top-20 left-10 w-72 h-72 bg-aurora-violet/20 rounded-full blur-3xl"
+        variants={floatingVariants}
+        animate="animate"
+      />
+      <motion.div 
+        className="absolute bottom-20 right-10 w-96 h-96 bg-aurora-lavender/10 rounded-full blur-3xl"
+        variants={floatingVariants}
+        animate="animate"
+        style={{ animationDelay: '1s' }}
+      />
+      <motion.div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-electric-blue/5 rounded-full blur-3xl"
+        variants={floatingVariants}
+        animate="animate"
+        style={{ animationDelay: '2s' }}
+      />
 
       {/* Content */}
       <div className={`relative z-10 max-w-5xl mx-auto px-6 text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <div className="glass-card rounded-3xl px-8 py-6 mb-8 inline-block">
-          <span className="text-white/90 text-sm font-medium tracking-wide uppercase">
+        <motion.div 
+          className="card-dark px-8 py-6 mb-8 inline-block"
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <span className="text-text-secondary text-sm font-medium tracking-wide uppercase">
             Монгол ТВ-ийн Ажилчдын Нэгдсэн Сан
           </span>
-        </div>
+        </motion.div>
 
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        <motion.h1 
+          className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tighter"
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.7 }}
+        >
           Хамтдаа
           <br />
-          <span className="text-white/90">Илүү Ирээдүйг</span>
-        </h1>
+          <span className="text-gradient">Илүү Ирээдүйг</span>
+        </motion.h1>
 
-        <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <motion.p 
+          className="text-xl md:text-2xl text-text-secondary mb-10 max-w-2xl mx-auto leading-relaxed"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.7 }}
+        >
           Ажилчдынхаа сайн сайхан байдлыг дэмжих, хамт олноо бэхжүүлэх зорилготой
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
+        <motion.div 
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.8, duration: 0.7 }}
+        >
+          <motion.a
             href="#contact"
-            className="glass-card px-8 py-4 rounded-2xl text-white font-semibold text-lg hover:bg-white/25 transition-all duration-300 hover:scale-105"
+            className="card-navy px-8 py-4 rounded-2xl text-white font-semibold text-lg border border-border-subtle"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 17 }}
           >
             Бидэнтэй холбогдох
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="#about"
-            className="glass-card px-8 py-4 rounded-2xl text-white/90 font-semibold text-lg hover:bg-white/25 transition-all duration-300 hover:scale-105"
+            className="card-dark px-8 py-4 rounded-2xl text-text-secondary font-semibold text-lg border border-border-subtle"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 17 }}
           >
             Дэлгэрэнгүй
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-white/60 rounded-full animate-pulse" />
+      <motion.div 
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+      >
+        <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2">
+          <motion.div 
+            className="w-1.5 h-3 bg-white/40 rounded-full"
+            animate={{ y: [0, 8, 0], opacity: [1, 0.3, 1] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+          />
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

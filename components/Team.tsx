@@ -1,68 +1,139 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Linkedin, Mail } from 'lucide-react'
+import FadeIn from './FadeIn'
+
+const team = [
+  {
+    name: 'Бат-Эрдэнэ',
+    role: 'Тэргүүн',
+    bio: '10+ жилийн туршлагатай удирдлагын мэргэжилтэн',
+  },
+  {
+    name: 'Оюунчимэг',
+    role: 'Дэд тэргүүн',
+    bio: 'Нийгмийн хамгааллын чиглэлээр мэргэшсэн',
+  },
+  {
+    name: 'Ганбат',
+    role: 'Нарийн бичиг',
+    bio: 'Ажилчдын холбооны зохион байгуулалт',
+  },
+  {
+    name: 'Сарангэрэл',
+    role: 'Санхүүч',
+    bio: 'Сангийн санхүүгийн менежмент',
+  },
+]
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.1, 0.25, 1]
+    }
+  }
+}
 
 export default function Team() {
-  const members = [
-    {
-      name: 'Б. Бат-Эрдэнэ',
-      role: 'Ерөнхий захирал',
-    },
-    {
-      name: 'Д. Сарантуяа',
-      role: 'HR менежер',
-    },
-    {
-      name: 'Г. Болд',
-      role: 'IT захирал',
-    },
-  ]
-
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <p className="text-mercury-blue font-semibold text-sm tracking-widest mb-4">
-            БАГИЙН ГИШҮҮД
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-starlight">
-            Удирдлах баг
-          </h2>
-        </motion.div>
+    <section id="team" className="py-24 px-6 bg-canvas">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <FadeIn>
+            <div className="card-dark px-6 py-2 inline-block mb-6">
+              <span className="text-text-secondary text-sm font-medium uppercase tracking-wide">
+                Баг
+              </span>
+            </div>
+          </FadeIn>
+          
+          <FadeIn delay={0.1}>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+              Удирдлах баг
+            </h2>
+          </FadeIn>
+          
+          <FadeIn delay={0.2}>
+            <p className="text-lg text-text-muted max-w-2xl mx-auto">
+              Ажилчдын сангийн удирдлах багтай танилцана уу
+            </p>
+          </FadeIn>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {members.map((member, index) => (
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-50px' }}
+        >
+          {team.map((member, index) => (
             <motion.div
-              key={member.name}
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className="bg-graphite rounded-2xl p-8 text-center hover:bg-graphite/80 transition-colors"
+              key={index}
+              variants={itemVariants}
+              whileHover={{ y: -8 }}
+              transition={{ duration: 0.3 }}
+              className="card-dark p-8 text-center border border-border-subtle"
             >
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-20 h-20 mx-auto mb-6 rounded-full bg-mercury-blue/20 flex items-center justify-center"
+              <motion.div 
+                className="w-20 h-20 mx-auto mb-6 rounded-full bg-card-navy flex items-center justify-center"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 17 }}
               >
-                <span className="text-2xl font-bold text-mercury-blue">
-                  {member.name.charAt(0)}
+                <span className="text-2xl font-bold text-electric-blue">
+                  {member.name[0]}
                 </span>
               </motion.div>
-              <h3 className="text-xl font-semibold text-starlight mb-2">
+              
+              <h3 className="text-lg font-bold text-white mb-1">
                 {member.name}
               </h3>
-              <p className="text-silver">
+              
+              <p className="text-electric-blue text-sm mb-4">
                 {member.role}
               </p>
+              
+              <p className="text-text-muted text-sm mb-6">
+                {member.bio}
+              </p>
+              
+              <div className="flex justify-center gap-4">
+                <motion.a 
+                  href="#" 
+                  className="text-text-muted hover:text-electric-blue transition-colors"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Mail className="w-4 h-4" />
+                </motion.a>
+                <motion.a 
+                  href="#" 
+                  className="text-text-muted hover:text-electric-blue transition-colors"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Linkedin className="w-4 h-4" />
+                </motion.a>
+              </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

@@ -1,6 +1,8 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { Heart, Shield, Users, Gift, FileText, Phone } from 'lucide-react'
+import FadeIn from './FadeIn'
 
 const services = [
   {
@@ -35,45 +37,90 @@ const services = [
   },
 ]
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.1, 0.25, 1]
+    }
+  }
+}
+
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6">
+    <section id="services" className="py-24 px-6 bg-canvas">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <div className="glass-card rounded-2xl px-6 py-2 inline-block mb-6">
-            <span className="text-white/80 text-sm font-medium uppercase tracking-wide">
-              Үйлчилгээ
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Бидний Үйлчилгээ
-          </h2>
-          <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Ажилчдынхаа сайн сайхан байдлыг хангах өргөн хүрээний үйлчилгээ үзүүлж байна
-          </p>
+          <FadeIn>
+            <div className="card-dark px-6 py-2 inline-block mb-6">
+              <span className="text-text-secondary text-sm font-medium uppercase tracking-wide">
+                Үйлчилгээ
+              </span>
+            </div>
+          </FadeIn>
+          
+          <FadeIn delay={0.1}>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+              Бидний Үйлчилгээ
+            </h2>
+          </FadeIn>
+          
+          <FadeIn delay={0.2}>
+            <p className="text-lg text-text-muted max-w-2xl mx-auto">
+              Ажилчдынхаа сайн сайхан байдлыг хангах өргөн хүрээний үйлчилгээ үзүүлж байна
+            </p>
+          </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-50px' }}
+        >
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <div
+              <motion.div
                 key={index}
-                className="glass-card rounded-3xl p-8 hover:bg-white/20 transition-all duration-300 hover:-translate-y-2 group"
+                variants={itemVariants}
+                whileHover={{ 
+                  y: -8, 
+                  transition: { duration: 0.3, ease: 'easeOut' }
+                }}
+                className="card-dark p-8 group border border-border-subtle cursor-pointer"
               >
-                <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors">
-                  <Icon className="w-7 h-7 text-white" />
-                </div>
+                <motion.div 
+                  className="w-14 h-14 rounded-2xl bg-card-navy flex items-center justify-center mb-6"
+                  whileHover={{ rotate: 5, scale: 1.1 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+                >
+                  <Icon className="w-7 h-7 text-electric-blue" />
+                </motion.div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-text-muted leading-relaxed">
                   {service.description}
                 </p>
-              </div>
+              </motion.div>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

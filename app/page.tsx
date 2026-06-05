@@ -6,6 +6,8 @@ import About from '@/components/About'
 import Blog from '@/components/Blog'
 import Team from '@/components/Team'
 import FAQ from '@/components/FAQ'
+import LeaveRequest from '@/components/LeaveRequest'
+import EmployeeInfo from '@/components/EmployeeInfo'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
@@ -19,6 +21,8 @@ export default function Home() {
       <About />
       <Blog />
       <Team />
+      <EmployeeInfo />
+      <LeaveRequest />
       <FAQ />
       <Contact />
       <Footer />
