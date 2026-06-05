@@ -40,7 +40,7 @@
       "x": 0,
       "y": 0,
       "width": 1440,
-      "height": 7200,
+      "height": 9500,
       "layout": "vertical",
       "fill": "#000000",
       "clip": true,
@@ -1473,6 +1473,792 @@
                           "fontSize": 14,
                           "fontWeight": "600",
                           "fill": "#000000"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "LeaveRequest-Section",
+          "layout": "vertical",
+          "width": "fill_container",
+          "padding": [80, 80],
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "name": "LeaveRequest-Header",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "LeaveRequest-Label",
+                  "content": "ЧӨЛӨӨНИЙ ХҮСЭЛТ",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 2,
+                  "fill": "#e6714f"
+                },
+                {
+                  "type": "text",
+                  "name": "LeaveRequest-Title",
+                  "content": "Чөлөөний хүсэлт илгээх",
+                  "fontFamily": "Inter",
+                  "fontSize": 48,
+                  "fontWeight": "500",
+                  "letterSpacing": -2.4,
+                  "fill": "#ffffff"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "LeaveRequest-Card",
+              "layout": "vertical",
+              "width": "fill_container",
+              "padding": 24,
+              "gap": 16,
+              "fill": "#0f0f10",
+              "cornerRadius": 24,
+              "stroke": "rgba(255,255,255,0.08)",
+              "strokeWidth": 1,
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "LeaveRequest-Trigger",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [16, 20],
+                  "gap": 16,
+                  "alignItems": "center",
+                  "fill": "#1c1d1f",
+                  "cornerRadius": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "LeaveRequest-Icon",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#001b33",
+                      "cornerRadius": 12,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "LeaveRequest-IconText",
+                          "content": "📅",
+                          "fontFamily": "Inter",
+                          "fontSize": 24
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "LeaveRequest-TriggerText",
+                      "layout": "vertical",
+                      "width": "fill_container",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "LeaveRequest-TriggerTitle",
+                          "content": "Чөлөөний хүсэлт бөглөх",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "#ffffff"
+                        },
+                        {
+                          "type": "text",
+                          "name": "LeaveRequest-TriggerDesc",
+                          "content": "Дараад бөглөх хэсгийг нээх",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fill": "#70757c"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "name": "LeaveRequest-Arrow",
+                      "content": "▼",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fill": "#e6714f"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "LeaveRequest-Form",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": [20, 0],
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "Form-Row-1",
+                      "layout": "horizontal",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "name": "Form-Name",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "Form-Name-Label",
+                              "content": "Ажилтны нэр",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "#888b91"
+                            },
+                            {
+                              "type": "frame",
+                              "name": "Form-Name-Input",
+                              "layout": "horizontal",
+                              "padding": [12, 16],
+                              "fill": "#1c1d1f",
+                              "cornerRadius": 12,
+                              "stroke": "rgba(255,255,255,0.1)",
+                              "strokeWidth": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "name": "Form-Name-Placeholder",
+                                  "content": "Нэрээ оруулна уу",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fill": "#70757c"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "name": "Form-Type",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "Form-Type-Label",
+                              "content": "Чөлөөний төрөл",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "#888b91"
+                            },
+                            {
+                              "type": "frame",
+                              "name": "Form-Type-Select",
+                              "layout": "horizontal",
+                              "padding": [12, 16],
+                              "fill": "#1c1d1f",
+                              "cornerRadius": 12,
+                              "stroke": "rgba(255,255,255,0.1)",
+                              "strokeWidth": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "name": "Form-Type-Value",
+                                  "content": "Жилийн чөлөө ▼",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fill": "#ffffff"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Form-Row-2",
+                      "layout": "horizontal",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "name": "Form-StartDate",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "Form-StartDate-Label",
+                              "content": "Эхлэх өдөр",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "#888b91"
+                            },
+                            {
+                              "type": "frame",
+                              "name": "Form-StartDate-Input",
+                              "layout": "horizontal",
+                              "padding": [12, 16],
+                              "fill": "#1c1d1f",
+                              "cornerRadius": 12,
+                              "stroke": "rgba(255,255,255,0.1)",
+                              "strokeWidth": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "name": "Form-StartDate-Placeholder",
+                                  "content": "2026.01.01",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fill": "#70757c"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "name": "Form-EndDate",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "Form-EndDate-Label",
+                              "content": "Дуусах өдөр",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "#888b91"
+                            },
+                            {
+                              "type": "frame",
+                              "name": "Form-EndDate-Input",
+                              "layout": "horizontal",
+                              "padding": [12, 16],
+                              "fill": "#1c1d1f",
+                              "cornerRadius": 12,
+                              "stroke": "rgba(255,255,255,0.1)",
+                              "strokeWidth": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "name": "Form-EndDate-Placeholder",
+                                  "content": "2026.01.05",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fill": "#70757c"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Form-Reason",
+                      "layout": "vertical",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Form-Reason-Label",
+                          "content": "Шалтгаан",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "#888b91"
+                        },
+                        {
+                          "type": "frame",
+                          "name": "Form-Reason-Input",
+                          "layout": "horizontal",
+                          "height": 100,
+                          "padding": [12, 16],
+                          "fill": "#1c1d1f",
+                          "cornerRadius": 12,
+                          "stroke": "rgba(255,255,255,0.1)",
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "Form-Reason-Placeholder",
+                              "content": "Чөлөө авах шалтгаанаа бичнэ үү...",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fill": "#70757c"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "Form-Submit",
+                      "layout": "horizontal",
+                      "padding": [14, 24],
+                      "fill": "#0088ff",
+                      "cornerRadius": 12,
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "name": "Form-Submit-Text",
+                          "content": "✈️ Хүсэлт илгээх",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fill": "#ffffff"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "EmployeeInfo-Section",
+          "layout": "vertical",
+          "width": "fill_container",
+          "padding": [80, 80],
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "name": "EmployeeInfo-Header",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "name": "EmployeeInfo-Label",
+                  "content": "АЖИЛЧДЫН МЭДЭЭЛЭЛ",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 2,
+                  "fill": "#0088ff"
+                },
+                {
+                  "type": "text",
+                  "name": "EmployeeInfo-Title",
+                  "content": "Мэдээллийн категори",
+                  "fontFamily": "Inter",
+                  "fontSize": 48,
+                  "fontWeight": "500",
+                  "letterSpacing": -2.4,
+                  "fill": "#ffffff"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "EmployeeInfo-Grid",
+              "layout": "horizontal",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "InfoCategory-1",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 20,
+                  "gap": 12,
+                  "fill": "#0f0f10",
+                  "cornerRadius": 24,
+                  "stroke": "rgba(255,255,255,0.08)",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "InfoCategory-1-Header",
+                      "layout": "horizontal",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "name": "InfoCategory-1-Icon",
+                          "width": 40,
+                          "height": 40,
+                          "fill": "#001b33",
+                          "cornerRadius": 10,
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-1-IconText",
+                              "content": "👤",
+                              "fontFamily": "Inter",
+                              "fontSize": 20
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "name": "InfoCategory-1-Text",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-1-Title",
+                              "content": "Хувийн мэдээлэл",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "600",
+                              "fill": "#ffffff"
+                            },
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-1-Count",
+                              "content": "3 мэдээлэл",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fill": "#70757c"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "name": "InfoCategory-1-Arrow",
+                          "content": "▼",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fill": "#0088ff"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "name": "InfoCategory-1-Content",
+                      "layout": "vertical",
+                      "width": "fill_container",
+                      "padding": [12, 0],
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "name": "InfoItem-1-1",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "padding": 12,
+                          "fill": "#1c1d1f",
+                          "cornerRadius": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoItem-1-1-Label",
+                              "content": "Нэр",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fill": "#70757c"
+                            },
+                            {
+                              "type": "text",
+                              "name": "InfoItem-1-1-Value",
+                              "content": "Бат-Эрдэнэ",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600",
+                              "fill": "#ffffff"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "name": "InfoItem-1-2",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "padding": 12,
+                          "fill": "#1c1d1f",
+                          "cornerRadius": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoItem-1-2-Label",
+                              "content": "Регистрийн дугаар",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fill": "#70757c"
+                            },
+                            {
+                              "type": "text",
+                              "name": "InfoItem-1-2-Value",
+                              "content": "АА12345678",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600",
+                              "fill": "#ffffff"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "InfoCategory-2",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 20,
+                  "gap": 12,
+                  "fill": "#0f0f10",
+                  "cornerRadius": 24,
+                  "stroke": "rgba(255,255,255,0.08)",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "InfoCategory-2-Header",
+                      "layout": "horizontal",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "name": "InfoCategory-2-Icon",
+                          "width": 40,
+                          "height": 40,
+                          "fill": "#030719",
+                          "cornerRadius": 10,
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-2-IconText",
+                              "content": "💼",
+                              "fontFamily": "Inter",
+                              "fontSize": 20
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "name": "InfoCategory-2-Text",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-2-Title",
+                              "content": "Ажлын мэдээлэл",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "600",
+                              "fill": "#ffffff"
+                            },
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-2-Count",
+                              "content": "4 мэдээлэл",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fill": "#70757c"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "name": "InfoCategory-2-Arrow",
+                          "content": "▼",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fill": "#b855e7"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "EmployeeInfo-Grid-2",
+              "layout": "horizontal",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "InfoCategory-3",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 20,
+                  "gap": 12,
+                  "fill": "#0f0f10",
+                  "cornerRadius": 24,
+                  "stroke": "rgba(255,255,255,0.08)",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "InfoCategory-3-Header",
+                      "layout": "horizontal",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "name": "InfoCategory-3-Icon",
+                          "width": 40,
+                          "height": 40,
+                          "fill": "#001b33",
+                          "cornerRadius": 10,
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-3-IconText",
+                              "content": "❤️",
+                              "fontFamily": "Inter",
+                              "fontSize": 20
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "name": "InfoCategory-3-Text",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-3-Title",
+                              "content": "Эрүүл мэнд",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "600",
+                              "fill": "#ffffff"
+                            },
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-3-Count",
+                              "content": "2 мэдээлэл",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fill": "#70757c"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "name": "InfoCategory-3-Arrow",
+                          "content": "▼",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fill": "#ff3366"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "InfoCategory-4",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 20,
+                  "gap": 12,
+                  "fill": "#0f0f10",
+                  "cornerRadius": 24,
+                  "stroke": "rgba(255,255,255,0.08)",
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "InfoCategory-4-Header",
+                      "layout": "horizontal",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "name": "InfoCategory-4-Icon",
+                          "width": 40,
+                          "height": 40,
+                          "fill": "#030719",
+                          "cornerRadius": 10,
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-4-IconText",
+                              "content": "🎓",
+                              "fontFamily": "Inter",
+                              "fontSize": 20
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "name": "InfoCategory-4-Text",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "children": [
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-4-Title",
+                              "content": "Боловсрол",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "600",
+                              "fill": "#ffffff"
+                            },
+                            {
+                              "type": "text",
+                              "name": "InfoCategory-4-Count",
+                              "content": "2 мэдээлэл",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fill": "#70757c"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "name": "InfoCategory-4-Arrow",
+                          "content": "▼",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fill": "#ffaa00"
                         }
                       ]
                     }
